@@ -10,3 +10,12 @@ while True:
     else:
         break
 print(numbers)
+
+
+numbers.sort()
+if len(numbers) % 2 == 0:
+    print(numbers[int(len(numbers)/2)] )
+else:
+    floor = numbers[len(numbers)//2]
+    roof =  numbers[-(-len(numbers)//2)]
+    print((floor+roof)/2)
