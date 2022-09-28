@@ -12,14 +12,13 @@ while True:
 print(numbers)
 numbers.sort()
 
-# [1,2,3,4,5,6]
+# [1,2,3,4,5,6,7]
 
 
-if (len(numbers) % 2) == 0:
-    mid = int(len(numbers) / 2)
-    print(numbers[mid])
-else:
-    lowmid = int(numbers[len(numbers)//2])
-    highmid =  int(numbers[-(-len(numbers)//2)])
+if len(numbers) % 2 != 0: #odd 
+    print(numbers[(len(numbers)/2)])
+else: #even
+    floor = numbers[len(numbers)//2]
+    roof =  numbers[-(-len(numbers)//2)]
 
-    print((lowmid+highmid)//2)
+    print((floor+roof)/2)
