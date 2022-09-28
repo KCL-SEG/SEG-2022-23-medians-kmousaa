@@ -14,12 +14,12 @@ numbers.sort()
 
 # [1,2,3,4,5,6,7]
 
-if n % 2 == 0:
+if len(numbers) % 2 == 0:
     median1 = n_num[n//2]
     median2 = n_num[n//2 - 1]
     median = (median1 + median2)/2
+    print(median)
 
 else:
     median = n_num[n//2]
-
-print(median)
+    print(median)
