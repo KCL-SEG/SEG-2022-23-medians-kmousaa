@@ -10,12 +10,16 @@ while True:
     else:
         break
 print(numbers)
-
-
 numbers.sort()
-if len(numbers) % 2 == 0:
-    print(numbers[int(len(numbers)//2)] )
+
+# [1,2,3,4,5,6]
+
+
+if (len(numbers) % 2) == 0:
+    mid = int(len(numbers) / 2)
+    print(numbers[mid])
 else:
-    floor = numbers[len(numbers)//2]
-    roof =  numbers[-(-len(numbers)//2)]
-    print((floor+roof)/2)
+    lowmid = int(numbers[len(numbers)//2])
+    highmid =  int(numbers[-(-len(numbers)//2)])
+
+    print((lowmid+highmid)//2)
